@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to Trivia Quiz Game</h1>
+    </div>
+    <div id="players_first">
+        <h2 id="names">Enter your names</h2>
+        <input type="text" placeholder="Player 1 name" id="player1_name">
+        <input type="text" placeholder="Player 2 name" id="player2_name">
+        <button type="submit" id="player_names" class="submit_button">Start Game</button>
+    </div>
+    <div id="choose_category">
+        <h3>Choose Category</h3>
+        <h4 id="player_cat"></h4>
+        <label for="category">Category:</label>
+        <select name="cat" id="cat2">
+            <option value="Music">Music</option>
+            <option value="Sport and Leisure">Sport and Leisure</option>
+            <option value="Film and Tv">Film and Tv</option>
+            <option value="Arts and Literature">Arts and Literature</option>
+            <option value="History">History</option>
+            <option value="Society and Culture">Society and Culture</option>
+            <option value="Science">Science</option>
+            <option value="Geography">Geography</option>
+            <option value="Food and Drink">Food and Drink</option>
+            <option value="General Knowledge">General Knowledge</option>
+        </select>
+        <button type="submit" id="btn-cat" class="btn2">Submit</button>
+    </div>
+    <div id="results"></div>
+    <div id="level"></div>
+    <div id="display_turn"></div>
+    <div id="answer"></div>
+    <div class="players">
+        <div class="player1">
+            <h3 id="play1"></h3>
+            <div id="player_score1">
+                <h5>Score: <span id="p1score">0</span></h5>
+            </div>
+            <div id="quiz1">
+                <div id="question1"></div>
+                <div id="list1"></div>
+            </div>
+        </div>
+        <div class="player2">
+            <h3 id="play2"></h3>
+            <div id="player_score2">
+                <h5>Score: <span id="p2score">0</span></h5>
+            </div>
+            <div id="quiz2">
+                <div id="question2"></div>
+                <div id="list2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <div id="end_game"></div>
+        <div id="btn-next"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
